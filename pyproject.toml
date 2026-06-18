@@ -1,0 +1,17 @@
+[project]
+name = "todo-cli"
+version = "0.1.0"
+description = "A simple SQLite-backed command-line to-do list manager."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Divyam" }]
+
+[project.scripts]
+todo = "todo_cli.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["todo_cli*"]
